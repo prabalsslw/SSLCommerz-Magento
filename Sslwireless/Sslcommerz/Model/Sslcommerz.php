@@ -544,7 +544,7 @@ class Sslcommerz extends AbstractMethod
         $order->setState($orderState)->setStatus(Order::STATE_CANCELED);
         $order->save();
         
-        setcookie('cross-site-cookie', 'bar', ['samesite' => 'None', 'secure' => true]);
+        //setcookie('cross-site-cookie', 'bar', ['samesite' => 'None', 'secure' => true]);
     }
     
     public function getSuccessMsg()
