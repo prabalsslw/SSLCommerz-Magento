@@ -39,7 +39,7 @@ class Response extends \Magento\Framework\App\Action\Action
 
         $paymentMethod->responseAction($data);
         
-        setcookie('cross-site-cookie', 'bar', ['samesite' => 'None', 'secure' => true]);
+        //setcookie('cross-site-cookie', 'bar', ['samesite' => 'None', 'secure' => true]);
         
         $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
         
